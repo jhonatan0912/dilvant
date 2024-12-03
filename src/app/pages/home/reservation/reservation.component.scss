@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  padding-block: 160px;
+}
+
+.reservation-section {
+  max-width: 70%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}

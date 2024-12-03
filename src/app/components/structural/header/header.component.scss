@@ -24,6 +24,7 @@ $header-height: 75px;
     top: $header-height;
     position: fixed;
     transition: transform .5s ease-in-out;
+    z-index: 999;
 
     &.active {
       transform: translateX(35%);
