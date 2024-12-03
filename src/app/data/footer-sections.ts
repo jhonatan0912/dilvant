@@ -3,9 +3,9 @@ import type { FooterSection } from '@interfaces/footer-item.interface';
 export const sections: FooterSection[] = [
   {
     id: 1, label: "Platos Estrellas", items: [
-      { label: "Ceviche", url: "", external: false },
-      { label: "Lomo Saltado", url: "", external: false },
-      { label: "Causa Rellena", url: "", external: false },
+      { label: "Ceviche", url: "/ceviche", external: false },
+      { label: "Lomo Saltado", url: "/lomo-saltado", external: false },
+      { label: "Causa Rellena", url: "/causa-rellena", external: false },
     ]
   },
   {

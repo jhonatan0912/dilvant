@@ -9,7 +9,7 @@
 
     @for (item of section.items; track $index) {
     <li class="footer-section-item">
-      <a [href]="item.url">{{ item.label }}</a>
+      <a [routerLink]="item.url">{{ item.label }}</a>
     </li>
     }
   </ul>
