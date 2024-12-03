@@ -17,6 +17,10 @@
   padding-inline: var(--section-padding-inline);
 
   @media (min-width:700px) {
+    gap: 24px;
+  }
+
+  @media (min-width:1024px) {
     gap: 80px;
   }
 }

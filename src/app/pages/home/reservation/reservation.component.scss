@@ -16,10 +16,19 @@
   gap: 24px;
 
   &-info {
-    max-width: 460px;
+    max-width: 525px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    &-title {
+      font-size: 2rem;
+      font-weight: 800;
+
+      @media (min-width:700px) {
+        font-size: 56px;
+      }
+    }
 
     @media (min-width:700px) {
       gap: 32px;
@@ -29,12 +38,23 @@
   &-image {
     width: 100%;
     height: auto;
+    max-width: 300px;
     object-fit: cover;
     border-radius: 10px;
+
+    @media (min-width:1024px) {
+      max-width: 450px;
+    }
   }
 
   @media (min-width:700px) {
-    max-width: 70%;
+    flex-direction: row;
+    max-width: 90%;
     gap: 80px;
+  }
+
+  @media (min-width:1024px) {
+    max-width: 100%;
+    justify-content: center;
   }
 }

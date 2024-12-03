@@ -27,4 +27,8 @@
     object-fit: cover;
     border-radius: 10px;
   }
+
+  @media (min-width:700px) {
+    flex-direction: row;
+  }
 }
