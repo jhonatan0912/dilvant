@@ -1,3 +1,9 @@
-<app-section-text size="lg">
+<app-section-text class="app-section-text" size="lg">
   ¿Cómo funciona? Elige tu plato favorito.
 </app-section-text>
+
+<section class="favorite-dish-grid">
+  @for (item of items; track $index) {
+  <app-favorite-dish-card [item]="item" />
+  }
+</section>

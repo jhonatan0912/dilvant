@@ -2,5 +2,19 @@
   display: block;
   max-width: var(--max-width);
   margin-inline: auto;
-  
+  padding-block: var(--section-padding-block);
+}
+
+.app-section-text {
+  text-align: center;
+}
+
+.favorite-dish-grid {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+  @media (min-width:700px) {
+    gap: 80px;
+  }
 }
