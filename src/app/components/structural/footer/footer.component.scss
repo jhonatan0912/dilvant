@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.footer-container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid #334155;
+
+  &-title {
+    font-size: 2rem;
+  }
+
+  @media (min-width:700px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-section-title,
+  .footer-section-item {
+    padding-block: 12px;
+  }
+
+  .footer-section-item {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-credits {
+  padding-block: 24px;
+  text-align: center;
+}

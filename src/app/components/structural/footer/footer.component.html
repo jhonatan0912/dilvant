@@ -1,0 +1,18 @@
+<footer class="footer-container">
+  <h3 class="footer-container-title">Dilvant</h3>
+
+  @for (section of sections; track $index) {
+  <ul class="footer-section">
+    <li class="footer-section-title">
+      <h4>{{ section.label }}</h4>
+    </li>
+
+    @for (item of section.items; track $index) {
+    <li class="footer-section-item">
+      <a [href]="item.url">{{ item.label }}</a>
+    </li>
+    }
+  </ul>
+  }
+</footer>
+<div class="footer-credits">Plantilla hecha por Dilvant - 2024</div>
