@@ -1,6 +1,6 @@
 import { NgClass } from '@angular/common';
 import { Component, HostListener, Input, input } from '@angular/core';
-import { ButtonType } from '@interfaces/button.interface';
+import type { ButtonType } from '@interfaces/button.interface';
 
 @Component({
   selector: 'app-button',

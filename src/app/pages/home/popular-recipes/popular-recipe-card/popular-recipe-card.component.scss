@@ -1,0 +1,18 @@
+.recipe-card {
+  background-image: url('https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 1rem;
+
+  &-name {
+    font-size: 24px;
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+}

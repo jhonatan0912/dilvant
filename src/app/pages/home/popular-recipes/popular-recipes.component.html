@@ -1,1 +1,11 @@
 <app-section-text size="lg"> Recetas Peruanas Populares </app-section-text>
+
+<app-button type="link">
+  Explora Todos los Platos <i class="pi pi-arrow-right"></i>
+</app-button>
+
+<section class="recipes-grid">
+  @for (recipe of recipes; track $index) {
+  <app-popular-recipe-card [recipe]="recipe" />
+  }
+</section>

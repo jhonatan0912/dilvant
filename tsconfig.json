@@ -32,6 +32,9 @@
       ],
       "@pages/*":[
         "./src/app/pages/*"
+      ],
+      "@data/*":[
+        "./src/app/data/*"
       ]
     }
   },

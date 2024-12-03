@@ -1,5 +1,5 @@
 import { Component, HostListener, signal } from '@angular/core';
-import { NavigationItem } from '@interfaces/header-item.interface';
+import type { NavigationItem } from '@interfaces/header-item.interface';
 import { ButtonComponent } from "../../ui/button/button.component";
 import { NgClass } from '@angular/common';
 

@@ -1,6 +1,6 @@
 import { NgClass } from '@angular/common';
 import { Component, input, OnInit } from '@angular/core';
-import { SectionTextSize } from '@interfaces/section-text.interface';
+import type { SectionTextSize } from '@interfaces/section-text.interface';
 
 @Component({
   selector: 'app-section-text',
