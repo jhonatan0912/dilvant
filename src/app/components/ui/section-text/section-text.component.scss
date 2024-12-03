@@ -1,0 +1,15 @@
+.section-text {
+  font-weight: 400;
+
+  &.sm {
+    font-size: 1.2rem;
+  }
+
+  &.md {
+    font-size: 1.6rem;
+  }
+
+  &.lg {
+    font-size: 2.4rem;
+  }
+}

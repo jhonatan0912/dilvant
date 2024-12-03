@@ -1,0 +1,1 @@
+export type SectionTextSize = 'sm' | 'md' | 'lg';
