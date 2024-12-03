@@ -1,22 +1,24 @@
 <header class="header">
-  <h1 class="header-brand">Dilvant</h1>
+  <section class="header-content">
+    <h1 class="header-brand">Dilvant</h1>
 
-  <nav>
-    <ul class="header-items" [ngClass]="{ active: mobileMenuOpened() }">
-      @for (item of navItems; track $index) {
-      <li class="header-item">
-        <span>{{ item.label }}</span>
+    <nav>
+      <ul class="header-items" [ngClass]="{ active: mobileMenuOpened() }">
+        @for (item of navItems; track $index) {
+        <li class="header-item">
+          <span>{{ item.label }}</span>
 
-        @if(item.submenu){
-        <i class="pi pi-angle-down"></i>
+          @if(item.submenu){
+          <i class="pi pi-angle-down"></i>
+          }
+        </li>
         }
-      </li>
-      }
-    </ul>
-  </nav>
+      </ul>
+    </nav>
 
-  <div class="contact-mobile-menu">
-    <app-button> Contacto </app-button>
-    <i (click)="onToggleMobileMenu()" class="pi pi-bars menu"></i>
-  </div>
+    <div class="contact-mobile-menu">
+      <app-button> Contacto </app-button>
+      <i (click)="onToggleMobileMenu()" class="pi pi-bars menu"></i>
+    </div>
+  </section>
 </header>

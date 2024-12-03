@@ -1,8 +1,10 @@
-<app-section-text size="lg"> Recetas Peruanas Populares </app-section-text>
+<div class="header-section">
+  <app-section-text size="lg"> Recetas Peruanas Populares </app-section-text>
 
-<app-button type="link">
-  Explora Todos los Platos <i class="pi pi-arrow-right"></i>
-</app-button>
+  <app-button type="link">
+    Explora Todos los Platos <i class="pi pi-arrow-right"></i>
+  </app-button>
+</div>
 
 <section class="recipes-grid">
   @for (recipe of recipes; track $index) {

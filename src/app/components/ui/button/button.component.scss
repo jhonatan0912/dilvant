@@ -9,7 +9,7 @@
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 
   &.filled {
     background-color: var(--main-button-color);
@@ -29,7 +29,7 @@
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      color: var(--button-hovered);
     }
   }
 }

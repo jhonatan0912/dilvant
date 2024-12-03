@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  padding-block: var(--section-padding-block);
+}
+
+.seasonal-dish-section {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
