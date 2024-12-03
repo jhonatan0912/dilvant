@@ -33,16 +33,14 @@ $header-height: 75px;
     }
 
     @media (min-width:700px) {
+      all: unset;
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 1rem;
 
       &.active {
-        all: unset;
-        display: flex;
-        flex-direction: row;
-        gap: 48px;
+        all: inherit;
       }
 
       .header-item {

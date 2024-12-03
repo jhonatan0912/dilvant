@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, HostListener, signal } from '@angular/core';
 import { NavigationItem } from '@interfaces/header-item.interface';
 import { ButtonComponent } from "../../ui/button/button.component";
 import { NgClass } from '@angular/common';
@@ -19,9 +19,17 @@ export class HeaderComponent {
     { id: 4, label: 'Reservas', submenu: [] },
   ];
 
-  mobileMenuOpened = signal(true);
+  mobileMenuOpened = signal(false);
 
   onToggleMobileMenu(): void {
     this.mobileMenuOpened.set(!this.mobileMenuOpened());
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    const target = event.target as Window;
+    if (target.innerWidth > 700) {
+      this.mobileMenuOpened.set(false);
+    }
   }
 }
