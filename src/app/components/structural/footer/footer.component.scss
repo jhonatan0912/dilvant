@@ -10,7 +10,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 16px;
+  padding-block: 16px;
+  padding-inline: var(--section-padding-inline);
   border-bottom: 1px solid #334155;
 
   &-title {
@@ -18,7 +19,6 @@
   }
 
   @media (min-width:700px) {
-    padding-inline: 0;
     flex-direction: row;
     justify-content: space-between;
   }

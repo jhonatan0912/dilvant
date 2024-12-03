@@ -14,10 +14,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
-  padding-inline: 16px;
+  padding-inline: var(--section-padding-inline);
 
   @media (min-width:700px) {
-    padding-inline: 0;
     gap: 80px;
   }
 }
