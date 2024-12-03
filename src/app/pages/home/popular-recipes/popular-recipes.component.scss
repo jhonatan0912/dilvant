@@ -3,17 +3,26 @@
   max-width: var(--max-width);
   margin-inline: auto;
   padding-block: var(--section-padding-block);
+  padding-inline: 16px;
 }
 
 .header-section {
   display: flex;
   justify-content: space-between;
+
+  .header-cta-label {
+    display: none;
+
+    @media (min-width:700px) {
+      display: block;
+    }
+  }
 }
 
 .recipes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-auto-rows: 300px;
-  gap: 10px;
+  gap: 24px;
   margin-top: 24px;
 }

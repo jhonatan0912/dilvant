@@ -17,7 +17,11 @@
   &.filled {
     background-color: var(--main-button-color);
     color: var(--text-primary);
-    padding: 12px 28px;
+    padding: 8px 16px;
+
+    @media (min-width:700px) {
+      padding: 12px 24px;
+    }
   }
 
   &.outline {
@@ -25,7 +29,11 @@
     color: var(--main-button-color);
     border: 2px solid var(--main-button-color);
     font-weight: var(--button-outline-font-weight, 700);
-    padding: 12px 24px;
+    padding: 8px 16px;
+
+    @media (min-width:700px) {
+      padding: 12px 24px;
+    }
   }
 
   &.link {
