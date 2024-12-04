@@ -1,4 +1,4 @@
-import { Component, input, OnInit } from '@angular/core';
+import { Component, input } from '@angular/core';
 import type { Recipe } from '@interfaces/recipe.interface';
 
 @Component({
@@ -7,13 +7,8 @@ import type { Recipe } from '@interfaces/recipe.interface';
   templateUrl: './popular-recipe-card.component.html',
   styleUrls: ['./popular-recipe-card.component.scss'],
 })
-export class PopularRecipeCardComponent implements OnInit {
+export class PopularRecipeCardComponent {
 
   recipe = input.required<Recipe>();
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

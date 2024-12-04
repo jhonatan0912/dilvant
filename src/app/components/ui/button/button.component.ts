@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, HostListener, Input, input } from '@angular/core';
+import { Component, HostListener, input, output } from '@angular/core';
 import type { ButtonType } from '@interfaces/button.interface';
 
 @Component({
@@ -13,9 +13,10 @@ export class ButtonComponent {
 
   type = input<ButtonType>('filled');
 
+  onClick = output<void>();
 
   @HostListener('click')
-  onClick(): void {
-    console.log('Button clicked');
+  handleClick(): void {
+    this.onClick.emit();
   }
 }

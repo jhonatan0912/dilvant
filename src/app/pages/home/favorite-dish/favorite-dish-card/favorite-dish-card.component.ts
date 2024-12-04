@@ -1,4 +1,4 @@
-import { Component, input, OnInit } from '@angular/core';
+import { Component, input } from '@angular/core';
 import type { FavoriteDish } from '@interfaces/favorite-dish.interface';
 
 @Component({
@@ -7,13 +7,8 @@ import type { FavoriteDish } from '@interfaces/favorite-dish.interface';
   templateUrl: './favorite-dish-card.component.html',
   styleUrls: ['./favorite-dish-card.component.scss']
 })
-export class FavoriteDishCardComponent implements OnInit {
+export class FavoriteDishCardComponent {
 
   item = input.required<FavoriteDish>();
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

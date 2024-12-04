@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SectionTextComponent } from "../../../components/ui/section-text/section-text.component";
 
 @Component({
@@ -8,11 +8,4 @@ import { SectionTextComponent } from "../../../components/ui/section-text/sectio
   styleUrls: ['./seasonal-dish.component.scss'],
   imports: [SectionTextComponent]
 })
-export class SeasonalDishComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class SeasonalDishComponent { }

@@ -12,15 +12,11 @@ import { PopularRecipeCardComponent } from "./popular-recipe-card/popular-recipe
   styleUrls: ['./popular-recipes.component.scss'],
   imports: [SectionTextComponent, ButtonComponent, PopularRecipeCardComponent]
 })
-export class PopularRecipesComponent implements OnInit {
+export class PopularRecipesComponent {
 
   recipes: Recipe[] = [];
 
   constructor() {
     this.recipes = recipes;
   }
-
-  ngOnInit() {
-  }
-
 }

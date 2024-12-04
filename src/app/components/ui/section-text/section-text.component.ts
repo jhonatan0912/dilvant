@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, input, OnInit } from '@angular/core';
+import { Component, input } from '@angular/core';
 import type { SectionTextSize } from '@interfaces/section-text.interface';
 
 @Component({
@@ -9,13 +9,8 @@ import type { SectionTextSize } from '@interfaces/section-text.interface';
   templateUrl: './section-text.component.html',
   styleUrls: ['./section-text.component.scss']
 })
-export class SectionTextComponent implements OnInit {
+export class SectionTextComponent {
 
   size = input<SectionTextSize>('sm');
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

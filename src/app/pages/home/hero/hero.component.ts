@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ButtonComponent } from "../../../components/ui/button/button.component";
 import { SectionTextComponent } from "../../../components/ui/section-text/section-text.component";
 
@@ -9,11 +9,4 @@ import { SectionTextComponent } from "../../../components/ui/section-text/sectio
   styleUrls: ['./hero.component.scss'],
   imports: [ButtonComponent, SectionTextComponent]
 })
-export class HeroComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class HeroComponent { }

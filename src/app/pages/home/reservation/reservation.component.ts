@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { SectionTextComponent } from "../../../components/ui/section-text/section-text.component";
+import { Component } from '@angular/core';
 import { ButtonComponent } from "../../../components/ui/button/button.component";
+import { SectionTextComponent } from "../../../components/ui/section-text/section-text.component";
 
 @Component({
   selector: 'app-reservation',
@@ -9,11 +9,4 @@ import { ButtonComponent } from "../../../components/ui/button/button.component"
   styleUrls: ['./reservation.component.scss'],
   imports: [SectionTextComponent, ButtonComponent]
 })
-export class ReservationComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class ReservationComponent { }

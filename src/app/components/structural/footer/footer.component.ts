@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { sections } from '@data/footer-sections';
-import { FooterSection } from '@interfaces/footer-item.interface';
+import type { FooterSection } from '@interfaces/footer-item.interface';
 
 @Component({
   selector: 'app-footer',
@@ -10,15 +10,11 @@ import { FooterSection } from '@interfaces/footer-item.interface';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
 
   sections: FooterSection[] = [];
 
   constructor() {
     this.sections = sections;
   }
-
-  ngOnInit() {
-  }
-
 }
